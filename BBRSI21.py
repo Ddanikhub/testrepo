@@ -62,7 +62,7 @@ class BBRSI21(IStrategy):
         dataframe.loc[
             (
                 (dataframe['close'] < dataframe['bb_lowerband']) &
-             #   (dataframe['mfi'] < 16) &
+             #   (dataframe['mfi'] > 16) &
               #  (dataframe['adx'] > 25) &
                 (dataframe['rsi'] < 21)
             ),
